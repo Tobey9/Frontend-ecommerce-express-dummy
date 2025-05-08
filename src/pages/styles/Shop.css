@@ -39,7 +39,8 @@
 
 .product-img {
   margin: 0 auto;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   height: 300px;
   overflow: hidden;
 }
