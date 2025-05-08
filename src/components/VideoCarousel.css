@@ -1,0 +1,54 @@
+.video-carousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+  z-index: 2;
+  padding: 1.5rem 2rem;
+
+  border-radius: 10px;
+  max-width: 700px;
+  min-height: 150px; /* ensures all text blocks are the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 1px 1px #000;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+}
+
+.overlay-text h2 {
+  font-size: 2.5rem;
+}
+
+.overlay-text p {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.overlay-text p a {
+  color: #fff;
+}

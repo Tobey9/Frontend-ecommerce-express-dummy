@@ -1,0 +1,40 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.photo-card {
+  border: 2px solid white;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* or any height you want */
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(60%);
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: rotate(1deg);
+}
+
+.photo-card p {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  z-index: 2;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.photo-card p a {
+  color: #fff;
+}

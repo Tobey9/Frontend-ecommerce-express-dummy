@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.navbar {
+  font-family: "Schibsted Grotesk", sans-serif;
+  color: #fff;
+  z-index: 10;
+  position: fixed;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar.shop-navbar {
+  color: #000;
+  position: static;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar.shop-navbar a {
+  color: #000;
+}
+
+.navbar .icon {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.navbar > h2 {
+  padding: 10px;
+}
+
+.navbar .right {
+  padding: 10px;
+  display: flex;
+}
+
+.navbar .right .icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  padding: 5px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
